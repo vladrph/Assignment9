@@ -1,6 +1,20 @@
 #include <iostream>
 
+
 using namespace std;
+
+/********************************************************************************************
+
+Name:Vladimir Petit-Homme	                            Z#:Z15346795
+Course: Date Structures and Algorithm Analysis (COP3530) Professor: Dr. Petrie
+Due Date: 11/28/2021	Due Time: 11:59pm
+Total Points: 100 Assignment 10b: know_recursion_and_list
+
+Description: This assignment  test the function of palindromes and also replaces a subsection of a string with a new string .
+
+
+
+*********************************************************************************************/
 
 class node
 {
@@ -10,14 +24,13 @@ public:
     node * next;
     int data;
 };
-
-
-
-
-
-
-
-
+///////////////////////////////////////////////////////////////////////////////////////////////
+//Function Name: fun
+//Precondition:  none
+//Postcondition: Linked list is created
+//Description: Creates a linked list of a specific data type.
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////
 void fun( node* start)
 {
  if(start == NULL)
@@ -27,6 +40,14 @@ return;
 fun(start->next->next);
  cout<< start->data<<endl;
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//Function Name: add_back
+//Precondition:  none
+//Postcondition: Node is added to the back of the list.
+//Description:Function either inserts a node into an empty list or inserts a node into the back of a list
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////
 void add_back(node *&front, node *&back, int x) {
     if (front == NULL){
         node *newNode = new node;
