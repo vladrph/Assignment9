@@ -15,31 +15,7 @@ public:
 
 
 
-/*
-void node::add_back( node *front, node *back,  int x) {
 
-    if (front->next == NULL){
-        node *newNode = new node;
-      //  front = new node;
-        front->next = newNode;
-        newNode->data = x;
-
-        newNode->next = back;
-
-    }else {
-        node *p =front;
-        node *newNode = new node;
-        newNode->data =x;
-        front->next = newNode;
-        newNode->next =back;
-    }
-   *//* front = nullptr;
-    node *newNode = new node;
-    newNode->data = x;
-    front*//*
-
-
-}*/
 
 
 void fun( node* start)
